@@ -16,47 +16,80 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-6" id="info">
           <h4>About You</h4>
           <form id="playerInfo">
-            <label for="name">Name:</label>
+            <label for="name" class="label">Name:</label>
             <input id="name" type="text">
             <br>
-            <label for="age">Age:</label>
+            <br>
+            <label for="age" class="label">Age:</label>
             <input id="age" type="text">
             <br>
-            <label for="gender">Gender:</label>
+            <br>
+            <label for="gender" class="label">Gender:</label>
             <select id="gender">
               <option value="female">Female</option>
               <option value="male">Male</option>
+              <option value="other">Non-binary</option>
               <option value="other">Other</option>
             </select>
             <br>
-            <label for="status">Current Status:</label>
+            <br>
+            <label for="status" class="label">Current Status:</label>
             <select id="status">
               <option value="single">single</option>
               <option value="notSingle">in a relationship</option>
             </select>
             <br>
-            <label for="openness">Would you be comfortable with an open relationship?</a>
+            <label for="openness" class="label">Are you open to open relationships?</a>
             <select id="openness">
-              <option value="yes">yes</option>
               <option value="no">no</option>
+              <option value="yes">yes</option>
             </select>
           </form>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-5" id="seeking">
           <h4>About Someone You'd Like To Meet</h4>
-          <form>
-            <label for="age">Age:</label>
-            <input id="age" type="text">
+          <form id="playerSeeking">
+            <label for="age" class="label">Age:</label>
+              <div>
+                <label for="ageMin">Min:</label>
+                <input id="ageMin" type="text">
+              </div>
+              <br>
+              <div>
+                <label for="ageMax">Max:</label>
+                <input id="ageMax" type="text">
+              </div>
             <br>
-            <label for="gender">Gender:</label>
-            <select id="gender">
-              <option value="female">Female</option>
+            <label for="gender" class="label">Gender:</label>
+            <br>
+            <label>
+              Female
+              <input name="gender" type="checkbox" value="female">
+            </label>
+            <br>
+            <label>
+              <input name="gender" type="checkbox" value="male">
+              Male
+            </label>
+            <br>
+            <label>
+              <input name="gender" type="checkbox" value="nonbinary">
+              Nonbinary
+            </label>
+            <br>
+            <label>
+              <input name="gender" type="checkbox" value="other">
+              Other
+            </label>
+
+            <!-- <select id="gender">
+              <!-- <option value="female">Female</option>
               <option value="male">Male</option>
-              <option value="noPref">Doesn't matter</option>
-            </select>
+              <option value="noPref">Doesn't matter</option> -->
+            <!-- </select> -->
           </form>
         </div>
       </div>

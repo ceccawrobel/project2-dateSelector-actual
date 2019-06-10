@@ -1,0 +1,23 @@
+#info {
+  background-color: #AF7AC5;
+  border-radius: 10px;
+  margin: 2px;
+}
+
+#seeking {
+  background-color: #B7950B;
+  border-radius: 10px;
+  margin: 2px;
+}
+
+label.label {
+  font-weight: bold;
+}
+
+input {
+  float: right;
+}
+
+select {
+  float: right;
+}
