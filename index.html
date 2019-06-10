@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Dating Show Contestant Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <p>Describe yourself and what you are looking for in a romantic partner, so we know who to match you with!</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h4>About You</h4>
+          <form id="playerInfo">
+            <label for="name">Name:</label>
+            <input id="name" type="text">
+            <br>
+            <label for="age">Age:</label>
+            <input id="age" type="text">
+            <br>
+            <label for="gender">Gender:</label>
+            <select id="gender">
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="other">Other</option>
+            </select>
+            <br>
+            <label for="status">Current Status:</label>
+            <select id="status">
+              <option value="single">single</option>
+              <option value="notSingle">in a relationship</option>
+            </select>
+            <br>
+            <label for="openness">Would you be comfortable with an open relationship?</a>
+            <select id="openness">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </form>
+        </div>
+        <div class="col-sm-6">
+          <h4>About Someone You'd Like To Meet</h4>
+          <form>
+            <label for="age">Age:</label>
+            <input id="age" type="text">
+            <br>
+            <label for="gender">Gender:</label>
+            <select id="gender">
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="noPref">Doesn't matter</option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
