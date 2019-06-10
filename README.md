@@ -5,7 +5,7 @@
 
 This webpage was created for a code review in the Epicodus part-time Intro to Programming course.
 
-This repository contains a webpage for contestants on a dating show to give basic information about themselves in order to me matched up with potential partners.
+This repository contains a webpage for contestants on a dating show to give basic information about themselves in order to be matched up with potential partners.
 
 ---
 **instructions**
