@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8"/>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script
@@ -47,6 +48,11 @@
               <option value="no">no</option>
               <option value="yes">yes</option>
             </select>
+            <br><br><br>
+            <!-- is there a better/cleaner way to move this down, so it doesn't run beside the fields above? all the break tags seem sloppy, but making a separate div for the button didn't seem to do anything, even when I made the div class="row"  -->
+            <div>
+              <button type="submit" class="btn-warning" id="infoSubmit">Submit</button>
+            </div>
           </form>
         </div>
         <div class="col-sm-5" id="seeking">
@@ -84,6 +90,9 @@
               <input name="gender" type="checkbox" value="other">
               Other
             </label>
+            <div>
+              <button type="submit" class="btn-warning" id="seekingSubmit">Submit</button>
+            </div>
           </form>
         </div>
       </div>
