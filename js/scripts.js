@@ -12,7 +12,15 @@ $(document).ready(function() {
     console.log("status is " + status);
     console.log("openness is " + openness);
 
+    if (status === "single" && gender === "male") {
+      $("#maleContestants").append("<br>" + name + ", " + age + "/m");
+    } else if (status === "single" && gender === "female") {
+      $("#femaleContestants").append("<br>" + name + ", " + age + "/f");
+    } else if (status === "single" && gender === "nonbinary") {
+      $("#nonbinaryContestants").append("<br>" + name + ", " + age + "/n");
+    }
+
     event.preventDefault();
-    // I know it didn't work without it... but why again do I need to use preventDefault?
+    // I know it didn't work without it... but why again do I need to use event.preventDefault?
   });
 });
