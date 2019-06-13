@@ -19,7 +19,7 @@ $(document).ready(function() {
     } else if (status === "single" && gender === "nonbinary") {
       $("#nonbinaryContestants").append("<br>" + name + ", " + age + "/n");
     }
-
+// next step is to make the append(ages) not just strings, but separate divs named uniquely such that if contents match the inputs on the second form, they will get highlit in some way
     event.preventDefault();
     // I know it didn't work without it... but why again do I need to use event.preventDefault?
   });
